@@ -756,3 +756,63 @@
 		- == only values are same
 	- booleans allow to make decision in our code
 - + only works with strings for concatenation while other operators convert them to numbers and carry out the operation
+- + unary converts non-numbers to numbers when put in front of them
+	- does the same thing as Number but shorter
+	- unary plus is applied first, then binary plus (higher operator precedence)
+- = assignment is also an operator
+	- think of it as an operator
+		- x = 2 * 2 + 2
+	- all operators return a value
+	- x = value. This call writes value into x then returns it
+	- so assignment can also be used in an expression
+- modify and assign operator += -= *= /=
+	- they have the same precedence as assignment operator
+- increment and decrement operator
+	- postfix or prefix
+	- we can only see the difference if we used the returned value
+	- can be used inside expressions. The precedence is higher than most operations.
+- code readability: 
+	- one line does multiple things - not good
+	- one line - one action
+- comma operator 
+	- lowest operator precedence
+- let x = 10
+	- returns undefined in the console
+	- you cannot declare, assign and read x's value in the same line
+
+### Questions
+- Name the three ways to declare a variable
+	- let, const, var
+- Which of the three variable declarations should you avoid and why?
+	- var should be avoided since it is the old way and can cause issues. let and const are the modern way of declaring the variable
+- What rules should you follow when naming variables?
+	- should not start with digits
+	- can include symbols like $ and _
+	- should be camel case likeThis
+	- should be descriptive enough to tell what's in it
+	- should not be reserved keywords like return, let
+- What happens when you add numbers and strings together?
+	- numbers are converted to strings and they concatenate. usually.
+- How does the Modulo (%), or Remainder, operator work?
+	- does integer division and returns the remainder
+- Explain the difference between `==` and `===`.
+	- `==` tests only the value
+	- `===` checks on both value and type. this is stricter
+- When would you receive a NaN result?
+	- when you try to perform a numerical operation where it isn't valid
+- How do you increment and decrement a number?
+	- a++ or ++a
+	- a-- or --a
+- Explain the difference between prefixing and postfixing increment/decrement operators.
+	- incrementing or decrementing the number and then returning the result
+	- incrementing and decrementing after returning the number as is
+- What is operator precedence and how is it handled in JS?
+	- to decide which operation to perform first in case of a conflict
+	- There is a priority list for all operator types including assignment which has the least priority and unary operator like + and - which has the highest priority
+- How do you access developer tools and the console?
+	- ctrl shift j
+- How do you log information to the console?
+	- console.log
+	- alert
+- What does unary plus operator do to string representations of integers? eg. +”10”
+	- converts it to a number
