@@ -866,3 +866,22 @@
 		- while a strict equality checks equality without type conversion i.e. if a and b are of different types then a false is returned without an attempt to convert them
 		- **for == , null and undefined are equal except for any other value. for other comparison operators, null is converted to 0 while undefined is converted to NaN**
 			- compare null and 0 with all comparison operators
+		- NaN returns false for all comparisons. undefined gets converted to NaN with comparison operators
+- Conditional Statements: if , if else, else
+- Logical operators: test multiple conditions without writing nested if and else
+	- can be applied to any data type and the return can be of any type
+	- when applied, they convert the operand to boolean type and return the original value
+	- OR || if the operand is not boolean it is converted to boolean for the operation
+	- most of the time or is used in the if statement to test multiple conditions
+	- a chain of || returns the first truthy value or the last value in case all of them turns out to be falsy
+	- a chain of && returns the first falsy value or the last value in case all of them are found to be truthy
+	- precedence of && is higher than ||
+	- don't replace if with &&
+	- ! converts to boolean type and returns the inverse value
+		- therefore !! is used to convert to boolean type
+		- Boolean function can also be used in its place
+- Any value that is not false, undefined, null, 0, NaN, "" returns true if used by itself as a conditional statement
+- Switch statement:
+	- large number of choices with simple condition and a simple task against each condition
+- Ternary operator
+	- condition ? code to run if it is true : code to run if it is false
