@@ -816,3 +816,53 @@
 	- alert
 - What does unary plus operator do to string representations of integers? eg. +”10”
 	- converts it to a number
+
+### Fundamentals 2
+
+- a variable can be initialised with a number but then later can store a string. the type of data a variable stores can be changed and that a variable is not bound by data type. Such type of programming languages that do this are called dynamically typed
+- Special numeric values
+	- NaN represents computational error. result of undefined or incorrect mathematical operation. It is sticky except for raised to the power 0.
+	- Infinity as it is or 1/0 or
+- BigInt for integers of arbitrary length
+- null value is a separate type which contains only null value
+	- special value which means nothing, empty or value unknown
+- undefined
+	- value is not assigned
+	- variable is declared and its value is not assigned
+	- initial value
+- object
+	- all other stuff like numbers, strings are primitive data types because they contain single thing
+	- objects are different. they can contain collections or complex things
+	- symbol: to create unique identifiers for objects
+- typeof operator
+	- returns string of type
+	- typeof() - not a function, only mathematical grouping
+- Primitive (number, bigint, boolean, string, null, undefined, symbol) , Complex DataStructures (object)
+- Strings
+	- use single quote or double but stick to one
+	- template literal: strings with back ticks
+		- embed js
+		- span multiple lines
+	- use \n to jump new lines in normal strings but keep all text in the same line
+	- use backslash \ to escapte characters
+		- escaping means we do something to them so they behave like text and not code
+	- strings are primitive and immutable. all string methods produce a new string without altering the existing string
+	- .at .charAt and []
+		- .at can use negative numbers other can't
+		- charAt returned empty string if a char isn't found while [] returns undefined
+		- we can't update any character
+	- slice, substring, substr
+		- slice (start, end) takes negative numbers as inputs
+		- substring - same but converts negative numbers to 0
+		- substr - same as slice but the second part is length. can take negative starting position
+	- str.concat(newstr, newstring2)
+		- str is not modified but a new string is returned
+	- convert a num to string using .toString() method
+	- method: a bit of a functionality built into the language or the datatype
+- Comparison Operators
+	- comparing strings. unicode ordering.. a> A (as per the internal encoding js uses)
+	- when comparing values of different types, js converts them to numbers
+		- this is the case with ==
+		- while a strict equality checks equality without type conversion i.e. if a and b are of different types then a false is returned without an attempt to convert them
+		- **for == , null and undefined are equal except for any other value. for other comparison operators, null is converted to 0 while undefined is converted to NaN**
+			- compare null and 0 with all comparison operators
