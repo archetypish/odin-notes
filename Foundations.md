@@ -885,3 +885,77 @@
 	- large number of choices with simple condition and a simple task against each condition
 - Ternary operator
 	- condition ? code to run if it is true : code to run if it is false
+- an if statement evaluates the expression in the parenthesis and converts it into a boolean value
+	- 0, "", false, undefined, NaN, null - false because they are falsy values and all other values are truthy values
+- the else clause
+- the ? question mark operator is called ternary operator because it has 3 operands
+	- ? has low precedence so it is usually executes last so there is no need for parenthesis (for the condition) but it makes the code more readable
+- ? is mostly used for variable assignment and it shall not be used in place of if else to run a piece of code
+- switch statement: strict equality check
+	- all cases are evaluated without check in case case break isn't used
+		- therefore several variants of case which share the same code can be grouped (without break)
+	- no need to use break for default
+
+### Questions
+
+- What are the eight data types in JavaScript?
+	- Primitive data types
+		- number (Infinity, NaN)
+		- strings
+		- boolean
+		- undefined
+		- null
+		- BigInt
+		- Symbol
+	- Objects
+- Which data type is NOT primitive?
+	- Object data type
+- What is the relationship between null and undefined?
+	- They are equal to one another using == (non strict equality) and nothing else
+	- They form their own type
+	- undefined is something whose value is not yet assigned
+	- null is empty or value unknown
+- What is the difference between single, double, and backtick quotes for strings?
+	- There is virtually no difference between three except for the fact that backtick strings are somewhat special and they are called template literals and they can accomodate variables using ${variable} notation
+- What is the term for joining strings together?
+	- concatenation
+- Which type of quote lets you embed variables/expressions in a string?
+	- backticks
+- How do you embed variables/expressions in a string?
+	- ${variable} notation inside backticks
+- How do you use escape characters in a string?
+	- using backward slash \' or \"
+- What is the difference between the slice/substring/substr string methods?
+	- slice starting and ending point. Can use negative values
+	- substring can't use negative values. convert them to 0.
+	- subtr using starting point and length
+- What are the three logical operators, and what do they stand for?
+	- they are used when we want to check multiple conditions
+	- OR - at least one of them conditions needs to be true. seeks first truthy value and then returns the original value
+	- AND - all of the conditions needs to be true. seeks first falsy value and then returns the original value
+	- NOT - negates a value. double negation is used to convert any value to boolean value
+- What are the comparison operators?
+	- they are used to compare 2 values. They do so by converting them first to numbers and then returning a boolean value
+- What are truthy and falsy values?
+	- truthy value are values which are converted to true when evaluating conditional statements
+	- falsy values are values which are converted to false when evaluating conditional/logical statements
+		- 0, false, "", undefined, null, NaN
+- What are the falsy values in JavaScript?
+	- already specified
+- What are conditionals?
+	- they are used to make decision in code based on some condition and carry out a specific action
+		- if else if else
+		- switch
+		- ? ternary operator
+- What is the syntax for an if/else conditional?
+	- if (condition){} else if (condition two){} else {} 
+- What is the syntax for a switch statement?
+	- switch (expression) { case expression: code break;}
+	- strict equality
+	- default option
+- What is the syntax for a ternary operator?
+	- let a = condition ? option 1 if condition true: option 2 if condition false
+- What is nesting?
+	- nesting is when adding another layer of decision making if the specified condition is not met
+		- if (condition) {} else { if () {}}
+		- condition ? option1 : condition2 ? option 2: option 3
