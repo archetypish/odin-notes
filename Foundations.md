@@ -959,3 +959,86 @@
 	- nesting is when adding another layer of decision making if the specified condition is not met
 		- if (condition) {} else { if () {}}
 		- condition ? option1 : condition2 ? option 2: option 3
+### DevTools
+- DOM
+	- html is a page with instructions on structure of the document. The browser needs to parse and process html to form a tree of objects. Each object of the tree is a node. and the entire tree representing the page's content is the dom (document object model)
+	- html can be different from its dom (js runs and changes an element)
+		- html represents initial page content
+		- dom represents current page content
+	- ctrl + f to search through the DOM
+	- scroll into view
+- Mobile view
+	- Ctrl + Shift + M
+	- DPR: Device Pixel Ratio : ratio between physical pixel on the device and logical pixel in css
+		- DPR tells chrome how many screen pixels to use to draw a CSS pixel
+- Debugging JS
+	- file navigator, code editor and js debugger (the Sources panel)
+	- console.log will always solve the problem but breakpoints will solve it faster
+	- Breakpoints
+		- line of code breakpoint
+			- use this when you exact region of code that you need to investigate
+			- devtools pauses before this line is executed
+			- it can be set in the code using code, `debugger;`
+		- Conditional line of code breakpoint
+			- use this when you want to stop the execution of code at a line only when a condition is being met
+				- loop
+		- Log Line of code breakpoint
+			- use this to log messages to the console without stopping the execution of the code and without cluttering up the code with console.logs
+		- DOM Change breakpoint
+			- use this when you want to pause on code that changes a DOM node and its children
+			- DOM breakpoints in Elements and Sources panel
+		- XHR/fetch breakpoints
+		- Event Listener Breakpoint
+			- click breakpoint mouse
+			- use it when you want to pause on code that runs after an event is fired
+		- Exception breakpoints
+			- use when you want to pause on line of code that throwing a caught or uncaught exception
+		- Function breakpoints
+				- call `debug(functionName)` when you want to pause whenever a function `functionName` is called
+	- Console API
+		- Info warning error
+			- console.log to log message the info level
+			- console.warn to log message at the warning level
+			- console.error to log message at the error level
+		- by default we can see messages at all levels
+		- console sidebar
+		- console.clear() to clear the console 
+		- console.table() to log array as table
+		- console.dir() to log as json
+		- console.group()
+			- to group console messages until console.groupEnd() is called
+			- console.groupCollapsed() - group nesting
+		- console.count()
+		- console.countReset()
+
+### Questions
+- How do you open developer tools?
+	- Ctrl + Shift + J to open console
+	- Ctrl + Shift + C to open elements tab
+	- Right click and element and inspect
+	- Ctrl + Shift + I to open last open tab
+- How do you change screen size of a website using developer tools?
+	- By switching to Device simulation mode or responsive mode, and entering the screen size in the device toolbar option
+- What is a breakpoint?
+	- breakpoint is when your code is paused during execution at a particular point based on your selection
+		- line of code, log line of code, conditional line of code etc
+- How do you set a breakpoint?
+	- Using the Sources panel
+		- JS Debugger
+		- Code Editor - Line of code breakpoint
+	- Elements panel for DOM breakpoint
+	- in the code
+		- using debugger; command
+
+### Functions
+- functions: they allow you to store a piece of code that allow you to do a single task inside a defined block and then allow us to call that code whenever you need to do that with a single short command
+- invoke - fancy word for running or executing a function
+- built in browser function are written in lower level languages like C++ and not in web language like JS. 
+- functions that are part of objects are called methods. 
+- you can call other function inside the functions
+- function expression: anonymous functions
+- function declaration: standard functions
+- scope
+	- conflict with global variable declaration when there are 2 or more scripts being loaded
+	- keeping parts of your code locked away in functions avoids this and is considered a best practice
+	- 

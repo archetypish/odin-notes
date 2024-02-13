@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "bb30c7e466cf97ab",
@@ -148,5 +147,8 @@
     }
   },
   "active": "79d6238349044f5d",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "Goals.md",
+    "Foundations.md"
+  ]
 }
