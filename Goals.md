@@ -1,13 +1,27 @@
-2024
-- February
-	- TOP Foundations
-	- HTML CSS Intermediate
-	- First 2 Chapters of ML
+## 2024
+- [ ] TOP
+- [ ] FullStackOpen
 
-2025
+- ### February 2024
+	- [ ] TOP Foundations
+	- [ ] HTML CSS Intermediate
+	- [ ] Lean Startup
+- ### March 2024
+	- [ ] JavaScript
+- April 2024
+	- [ ] Advanced HTML & CSS
+	- [ ] React
+- May 2024
+	- [ ] React
+	- [ ] NodeJS
+- June 2024
+	- [ ] NodeJS
+	- [ ] Getting Hired
 
-2026
+## 2025
 
-2027
+## 2026
 
-2028
+## 2027
+
+## 2028

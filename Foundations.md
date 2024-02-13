@@ -1041,4 +1041,67 @@
 - scope
 	- conflict with global variable declaration when there are 2 or more scripts being loaded
 	- keeping parts of your code locked away in functions avoids this and is considered a best practice
-	- 
+	- the same scoping rules do not apply to loops or conditions
+- return values
+- parameters and arguments
+	- we declare functions listing their parameters and we call them passing their arguments
+- local variables: variables declared inside the function are available only inside the function
+	- if the same named outer variable function is declared inside the function then it shadows the outer one
+	- it's a good practice to avoid use of global variables. Most variables reside in their functions.
+- parameters: when the function is called, the values passed to function parameters are copied to local variables
+	- so if a parameter is not passed and the same values exist in the global scope then that value will be passed to function as a copy
+	- such that the value is changed then it would not impact the global value
+- default value is still used if we pass undefined as an argument to the function
+- return directive can be anywhere and can have multiple instances
+- no return is same as just return; is just same as return undefined
+- functions are actions so their name is usually a verb
+	- a glance at a function name should tell what kind of work it does and what kind of value it returns
+- one function - one action
+- a separate function is not only easy to test and debug but is also a great comment
+- functions can be created even if we don't have any intention of using them again. It makes the code more readable. 
+- known prefix:
+	- get...
+	- show...
+	- check...
+	- create...
+- function declaration and function expression
+	- both are values
+	- using it without parenthesis - string representation - source code
+	- copy the function code to another function
+	- semicolor at the end of function expressions
+- callback functions
+	- we pass functions as arguments and expect them to be called back later if necessary
+- functions are value representing actions
+- Function expressions and Function Declarations
+	- When
+		- Functions expressions create functions when the execution reaches it and from then only they are available to be used
+		- Function declaration create functions and can be used before the execution reaches them
+	- Block
+		- in strict mode, the function declaration has block scope so conditionally declaring the function won't make it available outside the block
+		- we can use expressions and declare the variable in the global scope
+- Arrow function with and without {} braces
+- JS Call Stack
+	- mechanism to keep track of function calls
+	- js engine uses a call stack to manage execution context: global or function
+	- LIFO
+
+### Questions
+
+- What are functions useful for?
+	- wrap a piece of code that performs one action into a reusable block of code which can be called whenever required to perform the same task
+	- improve readability by making function describing the code like comments do
+	- declaring local variables to be used by function rather than global variables
+- How do you invoke a function?
+	- function()
+- What are anonymous functions?
+	- function which cannot be used later but are called by another function on the spot and serve their purpose
+- What is function scope?
+	- function looks for stuff in the function scope during execution, and if not found then go outside its scope to look for stuff in global scope
+	- function scope is defined as such that local variables declared inside a function (like parameters) are not accessible outside the function scope. This helps with scenarios when you load outside scripts and there are similarly named variables or even functions so there is no conflict. 
+	- functions can still access variables in the global scope but not the values in another functions local scope
+- What are return values?
+	- whatever the function returns once it finishes execution of input data
+- What are arrow functions?
+	- modern way to represent functions with a fewer key strokes
+
+
