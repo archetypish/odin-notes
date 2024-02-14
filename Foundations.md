@@ -1105,3 +1105,60 @@
 	- modern way to represent functions with a fewer key strokes
 
 
+### Problem Solving
+- core thing software developers do. The programming languages and tools they use are secondary to this fundamental skill
+- problem solving is writing an original program that performs a particular set of tasks and meet all stated constraints
+- the best way to improve on problem solving skills is by building experience by making lots and lots of programs. the more practice you have the better you will be prepared to solve real world problems
+- Understand the problem
+	- when you can explain the problem to someone in plain English, you understand it
+	- if you don't understand the problem you won't know when you have solved it or may work towards the wrong solution
+- Plan
+	- don't jump into coding. plan out how you are going to solve it
+	- questions to ask yourself
+		- Does your program have a ui? how does it look like? what functionality does it have? draw it on paper
+		- inputs: how will you get the data? user or somewhere else
+		- desired output
+		- steps that you need to take to get from input to output
+			- write an algorithm to solve the problem. algorithm is like a recipe to solve a problem. It defines the steps need to be taken by the computer to solve the problem in pseudocode 
+			- what is pseudocode?
+				- logic for the program in natural language instead of code
+			- Divide and conquer
+				- subproblems - each of the steps you wrote out in pseudocode is a sub problem. pick the smallest and simplest and then start with code from there. 
+				- the algorithm might be incomplete in the beginning
+				- solve each of the small problems until you solve the problem
+- the best way to solve problems is by having a framework and practising it
+- Video
+	- Coding has 8 main concepts that are consistent across languages
+	- Learn how to use these concepts in English
+	- Write out these concepts first in english and convert them to code later
+	- code is there to explain comments to the computer
+	- new variable 
+		- algorithm: create a variable `name` of type `type` with initial value `initValue`
+	- output: console.log
+	- input
+
+### Question
+
+- What are the three stages in the problem solving process?
+	- Understanding the problem
+	- Planning the solution
+	- Divide and Conquer
+- Why is it important to clearly understand the problem first?
+	- If you don't understand it well then you won't know when you have solved it. and you may work towards a wrong solution
+- What can you do to help get a clearer understanding of the problem?
+	- write down the problem again in plain english and even explain the problem to someone else in plain english
+- What are some of the things you should do in the planning stage of the problem solving process?
+	- You should ask yourself the following questions:
+		- Does it have a ui? If yes, what does it look like? Draw it on paper. And what functionality does it have?
+		- Input: what is the input? how does it get the input? does the user provide or does it get it from somewhere else?
+		- Desired Output: what is the desired output
+		- What are the steps that you need to take to go from inputs to desired out?
+			- Write these steps in plain english
+			- This is the pseudocode: sub problems that you need to solve to solve the bigger problem
+- What is an algorithm?
+	- this are the series of steps that you need to take solve the problem using the inputs and producing the desired output
+	- This is kind of like the recipe for solving the bigger problem
+- What is pseudocode?
+	- series of steps written in plain english using programming constructs
+- What are the advantages of breaking a problem down and solving the smaller problems?
+	- because one may not know how to solve the big problem in one go but one may know a smaller problem on a smaller scale. solving one problem may reveal more information like next steps, more data etc. 
