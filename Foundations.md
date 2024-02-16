@@ -1161,4 +1161,32 @@
 - What is pseudocode?
 	- series of steps written in plain english using programming constructs
 - What are the advantages of breaking a problem down and solving the smaller problems?
-	- because one may not know how to solve the big problem in one go but one may know a smaller problem on a smaller scale. solving one problem may reveal more information like next steps, more data etc. 
+	- because one may not know how to solve the big problem in one go but one may know a smaller problem on a smaller scale. solving one problem may reveal more information like next steps, more data etc.
+
+### Understanding Errors
+- error is a kind of object built into JS consisting of a name/type and a message
+- ReferenceError is thrown when one refers to a variable that is not yet defined or initialized in the current scope
+- stack trace: lets you trace the evolution of the error back to its origin
+- Syntax Errors
+	- code is not written correctly i.e. not in accordance with the grammatical rules of JS
+- Type Error
+	- consider the data type of the operand or argument to which you are applying the operator or method or function to
+	- Mostly likely, it might not be what you thought it was or the operations or method might not be compatible there
+- Errors vs warning
+	- errors will stop the program or whatever process you are attempting to run
+	- warnings are messages that provide you insight on potential problems that may not necessarily crash your program in runtime or at all
+- syntax errors vs logic errors
+	- syntax errors are spelling or grammatical errors in code which may prevent your program from running at all or stop your program part way through. You will get a message on what the issue is and where it is. 
+	- Logic errors are issues in the logic of the program such that the program doesn't do what you intended to do. This program runs without any errors. 
+
+### Questions
+- What are three reasons why you may see a TypeError?
+	- when you are attempting to modify a value that cannot be changed
+	- when you are using a value in an inappropriate way
+	- when you are using the method/function/operator to an argument/operand to which they are incompatible with
+- What is the key difference between an error and a warning?
+	- Errors are issues that stop your program from running or do a different thing than you intended it to
+	- warnings are messages give you an insight on potential issue that may not necessarily stop your program in runtime or at all
+- What is one method you can use to resolve an error?
+	- reading the messages and see what and where the error is occuring
+	- we can use debugging tools or console.log()
