@@ -1190,3 +1190,36 @@
 - What is one method you can use to resolve an error?
 	- reading the messages and see what and where the error is occuring
 	- we can use debugging tools or console.log()
+
+### Clean Code
+- Single letter variables can be used in loops and callback functions but avoid them elsewhere
+- Variable names should start with a noun or an adjective and function with a verb
+	- isSelected is bad variable name
+- when the programmer is absolutely sure that the variable is truly constant, then we can use THIS_NOTATION
+- break line immediately after operator or comma
+- good comments explain the reason behind the code: why it works instead of how it works
+- write your code as if your comments didn't exist: This will force you to write code in self-documenting way. Don't rely them as a crutch. Only at the point when the code cannot be made easier then you should resort to comments. 
+- Refactor, Rewrite your code until it doesn't need comments any more
+- Write code to be consumed by other programmers and by the computers second
+- Sometimes fewer comments make the code more readable: by using meaningful symbol names
+- Code tells you how, comments tells you why
+
+### Questions
+- Why is it important to write clean code?
+	- For yourself, when you come back to it
+	- For your fellow developers, as most of the software is developed by building on already written code. So, SWD spend most of their time reading code written by others or themselves
+	- Easier to maintain
+- Name 5 clean code principles previously mentioned
+	- Names: 
+		- Variable names should start with noun or adjectives and function names should start with verbs. 
+		- Use a consistent vocabulary (user or customer)
+		- Descriptive variable names and function names
+	- Indentation: Spaces or tabs. consistency is the key
+	- Line length of 80
+	- Comments: 
+		- explain why not how
+	- Semicolons
+ - What is the difference between good comments and bad comments?
+	 - Bad comments explain how the code is doing what the code is doing. Good comments explain the why
+	 - Bad comments are there as a crutch to compensate the badly written code
+	 - Good code doesn't require comments at all to explain what is happening. 
