@@ -1,0 +1,55 @@
+## One
+
+### Sam Altman
+
+- Meant for someone whose goal is hyper growth and eventually become a very large company
+- 4 areas that you need to excel at in order to maximise the success of the startup
+	- Idea
+	- Product
+	- Team
+	- Execution
+- Why to start a startup?
+	- never start a startup for doing so. There are much easier ways of getting rich
+	- Do it only if you feel compelled by a particular problem and if you think starting a company is the best way to solve it
+	- the specific passion should come first and startup second
+- Idea
+	- it has become popular in the recent years to say that the idea doesn't matter. You are just supposed to start. Throw stuff at the wall and see if it sticks. and not spend any time whether it will be valuable if it works. and pivots are supposed to be great, the more the better. 
+		- This isn't totally wrong. Things do evolve in a way that are difficult to predict. And there is a limit to how much you can figure out without actually getting the product in the hands of the users
+		- Great execution is 10 times more important and 100 times harder than a good idea
+		- a bad idea is still bad
+		- Great execution towards a bad idea will get you nowhere
+		- Most great companies start with a great idea and not a pivot. If you look into successful pivots, they almost always pivot into something that the founders themselves wanted not a random made up idea
+		- In general, pivots don't become big companies
+	- definition is very broad. It includes the size and growth of the market, the growth strategy for the company, defensibility strategy and so on
+	- When you are evaluating an idea, you need to think through all these things, not just the product. If it works out, you are gonna be working on this for 10 years, so it's worth some real up front time to think through the long term value of the defensibility of the business. 
+	- Even the plans themselves are worthless, the exercise of planning is really valuable and is totally missing in most startups today
+	- Long term thinking - huge advantage
+	- Idea will expand and will become more ambitious as you go, you certainly don't need everything figured out. You really want a nice kernel to start with. You want something that can develop in interesting ways. 
+	- Someday you need to build a business that's difficult to replicate. This is an important part of a good idea. 
+	- The idea should come first and the startup should come second. Wait to start a startup until you come up with an idea you feel compelled to explore. This is also the way to choose between multiple ideas. If you have several ideas, that all seem pretty good, Work on the one that you think of most often when you are not trying to think about work. 
+	- The best companies are always mission oriented. It's difficult to get large groups of people to the extreme levels of focus and productivity you need for a startup to be successful, unless the company feels like an important mission. It's really hard to get that without a great founding idea. 
+	- A related advantage of mission oriented ideas is that you yourself will be dedicated to them. It takes years and years, usually a decade to create a good startup. If you don't love and believe in what you are building, you are likely to give up at some point along the way. There is no way I know to get through the pain of a startup without belief that the mission really matters.
+	- Good startup usually take ten years. 
+	- A few advantages of mission oriented companies is that people outside the company are willing to help you. You will get more support on a hard important project than a derivative one. 
+	- When it comes to starting startups, it is easier to start a hard startup than an easier startup.
+	- Derivative companies, companies that copy an existing idea with a very few new insights don't excite people and don't compel people to work hard enough
+	- The hardest part of coming up with great ideas is that the best ideas often look terrible at the beginning. 
+		- 13th search engine without all the features of web portal
+		- 10th social network and limited only to college students with no money
+		- A way to stay on stranger's couches
+		- These all sounded really bad but they turned out to be pretty good. if they had sounded good, there would be too many people working on them. 
+	- You want an idea that turns into a monopoly. But you can't get a monopoly in a big market right away. Too much competition for that. You have to find a small market in which you can get a monopoly and then quickly expand. This is why some great startup ideas look really bad at the beginning. 
+	- It's good if you can say something like today, only a small subset of users are going to use my product but I am gonna get all of them and in the future almost everyone will use my product. 
+	- You need conviction in your own beliefs and a willingness to ignore others neigh saying. 
+	- The hard part is that this is a very fine line. There is right on side of it and crazy on the other. But keep in the mind even if you come up with a great idea most people are gonna think it is bad. You should be happy about that, means they won't compete with you. This is also a reason why it's not dangerous to tell people about your idea. The truly good ideas don't sound like they are worth stealing. 
+	- You want an idea about which you can say, I know this sounds like a bad idea but here is specifically why it is great one. You want to sound crazy but you wanna be actually be right. 
+	- You want an idea that not many people are working on. 
+	- It's okay, if it doesn't sound big at first. 
+	- Common mistake among founders especially first time founders is that they think the first version of their product, the first version of their idea needs to sound really big. But it doesn't It needs to take over a small specific market and expand from there. That's how the most great companies have started. Unpopular but right is what you are going for. 
+	- You also want to take the time to think about how the market is going to evolve. You need a market that's going to be big in ten years. Most investors are obsessed with market size today. They don't think at all about how the market is going to evolve. This is the biggest systemic mistake the investors make. They think about the growth of the startup itself. They don't think about the growth of the market. Think about is there any reason if it is gonna top out.
+	- I would prefer to invest in a company that's going after a small but rapidly growing market than a big but slow growing one. 
+	- One of the big advantages of these rapidly growing markets, is that the customers are pretty desperate for a solution. and they will put up with a imperfect but rapidly improving product.
+	- The big advantage of being a student (one of the 2 biggest advantages) is that you probably have a better intuition about which markets are likely to start growing rapidly than older people do. 
+	- Another thing that students usually don't understand or usually takes a while. You cannot create a market that doesn't wanna exist. You can basically change everything in a startup but the market. 
+	- Do some thinking that the market you are going after is going to grow and be there. 
+	- There are lot of different ways to talk about the right kind of market

@@ -1223,3 +1223,482 @@
 	 - Bad comments explain how the code is doing what the code is doing. Good comments explain the why
 	 - Bad comments are there as a crutch to compensate the badly written code
 	 - Good code doesn't require comments at all to explain what is happening. 
+
+### Node.js
+- js runtime environment that allow you to run js code outside of the browser
+- nvm: node version manager. it makes easy to change node version and upgrade node.
+- npm: node package manager. that you will later use to install various libraries and tools used in js environments. 
+- lts version: long term support version of node
+- to open: node
+- to exit: .exit
+
+### Arrays and Loops
+- arrays: data structures that can store multiple values in a single variable
+- loops are control structures which allow you to execute a block of code repeatedly
+- TDD: test driven development (practice for writing tests before writing the code itself)
+- array: 
+	- ordered collection of items
+	- using array literal to create an array: const arr = [a, b, c]
+	- common to use const for arrays
+	- declare first and then add values (to const only)
+	- no need to use the new Array(). instead use array literal
+	- typeof is object but they are best described as arrays
+		- objects use names to access values, arrays use numbers
+		- objects are dictionaries in python
+	- arrays are special kind of objects. There can be objects, function, arrays in arrays. 
+	- associative arrays: named indices (hashes). JS does not support this. If you use named indexes, JS will redefine the array into object and some properties and methods will not work as expected
+		- use arrays when you want element names to be numbers
+		- use arrays when you want element names to be strings
+	- built-in constructor: new Array()
+		- new Array(10) - create an empty array with 10 elements
+		- [10] - create a array with one element
+	- how to know if an object is array
+		- Array.isArray(test)
+		- test instanceof Array
+	- .at() method and [ ]
+		- many languages support use of -1 to access the last element
+		- JS can't do that since objects and arrays both use [] notation. -1 would mean a key called -1. 
+		- .at() solves this problem
+	- .join vs .toString()
+		- .join can specify the separator
+	- .pop
+		- removes the last element from the array and returns it
+	- .push method
+		- adds a new element to the array and returns the length
+	- shift is same as pop but it removes and returns first element
+	- unshift is opposite of push
+	- using length to append elements
+	- delete()
+		- leaves undefined holes. use pop and shift instead
+	- concat creates a new array. does not alter.
+		- can take any number of arrays
+	- copyWithin
+		- overwrites, does not increase length
+	- flattening an array
+		- reducing its dimensionality. convert multi-dimensional array to one dimensional array
+		- .flat() doesn't update. returns a new array
+	- splice(position, how many to remove, items to be added comma separated)
+		- returns what was removed
+		- returns length 0 if nothing is removed
+	- toSpliced() doesn't alter the original array
+	- slice creates a new array. doesn't alter the existing array. 
+	- js automatically converts an array into string when a primitive type is expected
+- Loops
+	- for of construct
+	- filter - return array after applying function to each element and filtering based on which returns true
+	- map - return array after applying the function to each element
+		- both filter and map are most often used with function expressions - anonymous functions or arrow functions
+	- running a code like 100 times - for loop
+		- for (intializer; condition; final-expression)
+			- initializer - variable set to a number which is incremented to count the number of times a loop is run. counter variable
+			- condition: expression using comparison operator to check when the loop should stop looping
+			- increment or decrement to bring the initialized variable closer to the condition. run once the loop has gone through a full iteration
+		- we have to use let for counter variable as we are reassigning it each iteration
+	- best to loop over a collection using for...of loop
+	- break: break out of the loop
+	- continue: skips to next iteration of the loop
+	- while 
+		- initilizer
+		- while(condition) {
+		- // code
+		- final expression
+		- }
+	- and do...while
+		- initializer
+		- do {
+		- // code
+		- final expression
+		- } while ()
+	- do...while will run at least once
+		- in while and for loop, the check comes first so we might never run them based on the conditon
+	- infinite loop if the while loop doesn't increment or decrement the counter
+	- a single execution of the loop is called iteration
+	- any expression or variable can be a loop condition, not just comparisons: the condition is evaluated and converted to boolean by while
+	- inline variable declaration: in for loop
+		- the variable is visible only inside the loop
+	- the combination of infinite loop + break is great for situations where a loop's condition needs to be checked not in the beginning or end of the loop but in the middle or several places of its body
+	- continue decreases the level of nesting
+	- syntax constructs that are not expressions cannot be used to the right side of ?
+		- no break or continue to be used with ? operator
+		- another reason to not use ternary operator in place of if else construct
+	- label (an identifier with a colon before the loop.)
+		- to break or continue from any level of the loop not just the inner most one
+	- break and continue are mostly used inside the loops. and labels do not allow us to jump to arbitrary places
+		- a way to break or continue in the nested loops
+- Test Driven Development (TDD)
+
+### Questions
+- What is an array?
+	- array is a ordered collection of items or a list of items. items can be of same or different types
+- What are arrays useful for?
+	- for storing a variety of information about an entity or one kind of information for various entities without creating large number of variables
+- How do you access an array element?
+	- array[index starting from 0 upto length of array-1]
+	- array.at(index starting from 0 upto length of array - 1 or negative indices which start from end)
+- How do you change an array element?
+	- array[index] = new value
+- What are some useful array properties?
+	- array.length
+	- 
+- What are some useful array methods?
+	- array.includes()
+	- array.at()
+	- array.filter()
+	- array.map()
+	- array.forEach()
+- What are loops useful for?
+	- loops are useful for iterating over an iterable object
+	- for repeating an action n number of times
+	- for repeating an action until a condition is being met
+	- for running an infinite loop
+- What is the break statement?
+	- break out of a loop block usually an infinite loop when a condition is met
+- What is the continue statement?
+	- continue to next iteration of loop once a condition is met
+- What is the advantage of writing automated tests?
+	- so you need not to run your function multiple times manually once you finish writing it
+
+### DOM Manipulation and Events
+
+- DOM
+	- tree like representation of the webpage - tree of nodes with different relationship depending upon how they are arranged in the html document
+		- parent, child, sibling
+	- targeting nodes with selectors
+		- when working with the dom, you use selectors to target the node you want to work with - combination of css style selector and relationship properties (identify the node based on its relationship to the nodes around it)
+- DOM Methods
+	- when you html code is parsed by the browser, this is converted to DOM (tree of nodes). These nodes are objects with many methods and properties attached to them
+		- these properties and methods are the primary tools we are going to use to manipulate our page.
+	- query selector
+		- element.querySelector(selector) - returns a reference to first match of selector
+		- element.querySelectorAll(selectors) - returns a nodelist containing all the matches  of the selectors
+- textContent over innerHTML
+- JS changes what the browser renders and not the html
+- script tag in head of html file to load js once html is parsed or DOM nodes are created
+- Events are actions that occur on our webpages and using JS we can make our web page listen to these events and react to these events
+- 3 ways to do that
+	- inside html eg. onclick attribute
+		- not ideal as we are cluttering our html with js
+		- one onclick attribute per dom, so we are unable to run multiple separate functions in response to a click using this method
+	- move the js out of the html but other problem remains
+	- multiple event listeners if the need arises
+- DOM: 
+	- API to manipulate html documents. DOM represents html document as a tree of nodes.
+	- in the dom tree, the document is the root node. one child, html element. it is called the document element. each document can have only one document element. 
+		- each markup is represented by a node in a tree
+		- node is identified by node type.
+			-  node.nodeType
+		- nodeName and nodeValue - specific info about the node. it depends upon nodeType
+	- node and element: 
+		- generic name for any object in the DOM tree
+			- built-in DOM element like the document or html tag
+		- an element is a specific node of node.ELEMENT_NODE type
+		- getElementById and querySelector returns an object with Element type while getElementsByTagName and querySelectorAll returns nodelist which is a collection of nodes
+	- each markup can be represented as a node with a specific node type
+	- in a dom tree, node has relationship with other nodes like a family tree
+	- getElementById() to select an element with a specific id
+		- document.getElementById() returns an element object that represents an html element with the matched id
+		- it is only available on the document object and not on other elements
+	- getElementsByName()
+		- name attribute. multiple elements can share value and name attribute unlike id attribute
+		- document.getElementsByName
+		- returns a nodeList of elements, return collection is live. That is this collection is automatically updated when  elements are added with the same name or removed.
+	- getElementsByTagName()
+		- method of document object or specific DOM element
+		- takes the tag, returns an html collection of matching tag names in the order in which they appear in the document
+			- live collection
+	- querySelectorAll 
+		- returns a static nodelist
+		- Array.from to convert nodelist to array
+		- methods forEach and constructs like for of are valid on nodelist
+- JS Events
+	- event handler - function
+	- register an event handler using addEventListener function
+	- Event flow explains the order in which event is received on the page from the element where the event occurs and how it propagates through the DOM tree
+	- 2 main event models: event bubbling and event capturing
+	- Event Bubbling
+		- event flows upwards through the DOM from most specific element to least specific element
+		- modern web browsers bubble to event upto window object
+	- Event Capturing
+		- event flows downwards through the DOM from least specific element to the most specific element
+	- DOM Level 2 Event Flow
+		- event flow has 3 phases
+			- event capturing occurs, which provides an opportunity to intercept the event
+			- actual target receives the event
+			- event bubbling occurs, which provides final response to the event
+	- Event Object
+		- when the event occurs, the browser passes event object to the event handler
+		- this is only accessible inside event handler
+	- .preventDefault() to prevent the default behavior of an event but does not stop the event flow
+	- if there are multiple event handlers, all the event handlers will be executed when the event is fired
+	- load event for images
+	- 3 ways to register an event handler
+		- use .addEventListener event handler
+		- assign event handler to onclick property of the element
+		- assign event handler to element attribute in html (this is mostly done in legacy systems)
+	- Mouse events
+		- event object has button property to indicate which button was pressed
+	- Scroll events on the window object to handle the scroll of the whole page
+	- Event delegation
+		- large no of event handlers impact the performance of the page
+			- event handlers are functions which is also an object and which takes up memory. The more objects in the memory, slower the performance.
+			- it takes time to assign event handlers, which causes delay in interactivity of the page.
+		- it refers to the technique of using event bubbling to handle events at a higher level in the DOM than the element at which they are originated at
+	- Generate Events from Code (programatically)
+	- Custom Events: Instead of using callbacks, we can use custom events and then use those to trigger a function
+	- Mutation Observer to watch for the changes made to the DOM API
+- Digital Ocean
+	- All the items in the DOM are defined as nodes
+	- mostly work with: element nodes, text nodes, comment nodes
+	- when an html element is an item in the DOM, it is referred to as Element Node, any lone text outside of the element is the text node, and comments are comment node
+	- nodeType property
+	- nodeValue and nodeName - tag name
+	- document object is the root of every node in the DOM
+		- this is actually a property of the top level window object which represents the tab in the browser
+		- it has access to information such as toolbar, height and width of the window
+		- the document consists of what is inside the inner window'
+		- even a blank html will have these 3 nodes added and parsed into the DOM
+			- document - # document
+			- document.documentElement = html
+			- document.head
+			- document.body
+		- parent
+			- parentNode or parentElement
+			- parent of almost any node is usually an element node as text/comments cannot be parents of other nodes. however parent of html is a document node, so parentElement returns null
+			- parentNode is used more when traversing the DOM
+		- Children
+			- one level below
+			- more than one: descendants 
+			- childNodes  - live list, nodelist
+				- indentation in html is considered as text nodes
+				- this is not mentioned in the elements panel
+			- even firstChild gives the first text node
+			- so we resort to children, firstElementChild, lastElementChild - which only consider element nodes
+			- eg: p element that has text and strong tag
+				- p.childNodes gives text, strong, text
+				- p.children only gives strong
+			- eg: ul has li and there is indentation as well
+				- p.childNodes gives indentation as text as well as li
+				- p.children here is more suitable
+		- Siblings
+	- create nodes
+		- createElement and createTextNode
+	- inserting nodes into the DOM
+		- appendChild, insertBefore, replaceChild methods
+	- remove child node - removeChild()
+	- remove the node itself - remove()
+	- getElementsByTagName and getElementsByClassName are html collections and do not have methods like .forEach. You can use for loop to loop through these collections
+	- properties and methods that are used to modify the attributes of the elements
+	- Custom attributes that are not part of the html standard are to be prepended with data- or aria-
+	- the styles property represents the inline styles on an element
+	- setting style using setAttribute will remove the existing styles. To avoid this, we can update value of the style property
+	- Event Handlers and Event Listeners
+		- Event handlers is JS function that runs when an event is fired
+		- Event Listener attaches an responsive interface to an element, which allows that particular element to wait and listen for the event to fire
+	- 3 ways to assign events to elements
+		- inline event handlers
+		- event handler property
+			- we only pass the function as a reference since we are not invoking the function
+			- multiple onclick properties can't be set. 
+		- event listener
+			- it watches for an event on an element
+			- method on the element which watches for an event on that element
+			- we can set multiple event listeners on the same event
+			- removeEventListener
+	- Event Objects
+		- event object consists of properties and methods that all events can access. In addition to the generic event object, each type of event has its own extension to the event object, MouseEvent, KeyboardEvent
+		- Event object is passed through a listener function as a parameter
+	- event.target: use one event listener and get the most deeply rooted element 
+- MDN Events
+	- Events are things that happen in the system in which you are programming, which the system tells you about so your code can react to them
+	- to react to an event, you attach a event handler to it - block of code( that you as a programmer create) that runs when the event fires. When such a block of code is defined to run in response to an event, we say that we are registering an event handler. Event handlers are sometimes called event listeners. but they work together
+		- listener watch out for the event and handler is the code that runs in response to it. 
+	- Web events are not part of the core JS language. They are part of the APIs built into the browser. 
+	- objects that can fire events have a addEventListener method
+	- objects that can fire events have a property with on prefix like onclick. This is called event handler property.
+		- to listen to the event, you can assign the handler function to the property.
+		- handler function - named or anonymous
+			- reference to the named function
+	- we can't handle more than 1 event with event handler property as the last one will overwrite the property with the latest event handler function
+	- Inline event handlers - never use these
+		- call function defined in the script within html or just write js in html as attribute value
+	- Event Objects
+		- it is automatically passed to event handlers to provide extra information and features
+		- target property of the event object is always a reference to the element where the event occurred
+		- can be called anything, e, evt, event are most commonly used
+		- specialized
+			- keydown event fires when a key is pressed
+			- its event object called KeyboardEvent has a key property which tells which key you pressed
+	- Preventing default behavior
+		- Eg: prevent form submission in case the user has not submitted the data correctly
+			- submit event is fired on form element when the form is submitted
+	- Event Bubbling
+		- event bubbling describes how the browser handles events targeted at nested elements
+		- events bubble up from the innermost element that was clicked
+		- event object has a method on it called stopPropagation() which when called inside a event handler prevents the event from bubbling up to any other elements
+	- an alternative form event propagation is called event capture
+		- this is like event bubbling but the order is reversed
+		- so instead of event firing on the innermost element targeted then successively on the less nested element, the event fires on the least nested element and successively on the more nested elements until the target is reached
+		- event capture is disabled by default, To enable it you need to pass in an option to addEventListener
+	- by default, almost all event handlers are registering in the bubbling phase
+	- Event bubbling allows event delegation
+		- when we want some code to run when the user interacts with any of the child elements, we set the event listener on the parent and have the events that happen on them bubble upto their parent rather than having to set eventListener on every child individually
+		- target - innermost element
+		- currentTarget - element which handled the event
+	- Events are not unique to JS
+	- Most programming languages have event model and the way the event model works differs from JS way
+
+### Questions
+
+- What is the DOM?
+	- DOM is the document object model. In essence, it is a programming interface. Browser parses the html into a document object model (sort of like a tree with each element as node). Each part of the page starting from the document is an object and each object has methods and properties which allows JS to create, update, remove elements as well as introduce interactivity to web pages
+- How do you target the nodes you want to work with?
+	- using document object or any particular element object
+	- There are methods available in each object such as querySelector, getElementById, getElementsByTagName, getElementsByClassName
+	- using these methods we can target specific or list of nodes
+- How do you create an element in the DOM?
+	- document.createElement(type of element)
+- How do you add an element to the DOM?
+	- elementObject.appendChild()
+	- or insertBefore
+	- or replaceChild
+- How do you remove an element from the DOM?
+	- elementObject.removeChild()
+	- or replaceChild()
+	- elementObject.remove()
+- How can you alter an element in the DOM?
+	- you can add attributes using setAttribute
+	- you can alter properties of element object
+	- you can add classes classList.add remove toggle 
+- When adding text to a DOM element, should you use textContent or innerHTML? Why?
+	- you should use textContent
+	- innerHTML has security issues
+- Where should you include your JavaScript tag in your HTML file when working with DOM nodes?
+	- at the end of the html as last element so that browser creates the DOM tree once it gets to js
+- How do “events” and “listeners” work?
+	- events are fired for things that occur in the browser or based on the user action
+	- listener watch out for these events and then do something in response 
+- What are three ways to use events in your code?
+	- using event listener method
+	- using event handler property like eventobject.onclick
+	- using inline event handlers
+- Why are event listeners the preferred way to handle events?
+	- keep js and html separate
+	- can add multiple event handlers to an event
+- What are the benefits of using named functions in your listeners?
+	- can utilize them in multiple places 
+	- easier to remove
+- How do you attach listeners to groups of nodes?
+	- attach them to their parent
+	- then the events that occur in the group of nodes, it bubbles up to their parent
+	- or use querySelectorAll and then use forEach
+- What is the difference between the return values of querySelector and querySelectorAll?
+	- returns the first element that matches
+	- returns the live list of node list (forEach supported)
+- What does a “nodelist” contain?
+	- list of nodes
+	- slightly different from array
+	- reference to all matches of selectors
+- Explain the difference between “capture” and “bubbling”.
+	- when event propagates from innermost element to the outermost - bubbling
+	- when the event propagates from outermost element to the innermost element
+
+### UI to Rock Paper Scissor
+- Git Branching
+	- Branches in git allow you to hold alternate reality versions of your files at the same time
+	- default branch (main): branch that is created when you make your first commit to the project
+	- like the branches in a tree, all the branches stem off from the trunk (main) or off other branches
+	- when you make commits on a branch, those changes only exist on that branch, leaving all of other branches as they were when you branched off of them
+	- main branch = finished features that you know are working properly and add each feature to your project using dedicated branches - feature branch
+	- create - git branch branchname 
+	- change - git checkout branchname
+	- do both of above together - git checkout -b branchname
+	- see all branches - git branch
+	- current branch - * 
+	- git checkout main to change to main branch
+	- merge
+		- git merge branchname
+			- take the changes you have committed on branchname and add them to the branch you are currently on
+		- same lines being changed by different branches = merge conflict
+	- delete 
+		- git branch -d branchname if the branch has been merged into main
+		- git branch -D branchname if the branch has not been merged into main
+	- Sharing code: sharing code with other that you might not want to commit to your main branch or feature branch
+
+### Object Basics
+- objects: collection of key value pairs
+- 8 data types: 7 are called primitive data type because their value contain a single thing
+- created with {...} with an optional list of properties. property : key-value pair where key is a string (property name) and value can be anything
+- object literal syntax: newOb = { }
+- object constructor syntax: new Object()
+- dot notation to access values or add k-v pair and square bracket notation
+	- square bracket allows expressions: this allows keys to be calculate at run time or can be user inputted
+- trailing coma: it makes easy adding, moving k-v pairs around
+- Computed properties
+	- in the object literal, the property name should be taken from the notation [fruit]
+- property value shorthand
+- There are no limitations for property names. Like variable names cannot be equal to language reserved words (for, let, const, return). They can be strings or symbols. Other types are automatically converted to strings
+- possible to test any property. there will be no error if it doesn't exist. Reading a non-existent property just returns undefined.
+	- "key" in object
+	- why does this operator exist? to account for the special case when the property stores undefined
+	- this does happen rarely as undefined is rarely used. we use null for empty values
+- for...in loop
+	- to walk over all the keys in the object
+- objects are ordered in a special fashion
+	- integer properties are sorted, others appear in creation order
+		- integer properties: string that can be converted to and from an integer without a change (that is it stays the same)
+- MDN
+	- objects: collection of related data and functionality. properties and methods when they are inside the object.
+	- for methods instead of method: function(){}, we can write method(){}
+	- object literal, obj = {...} vs object instantiated from class
+	- an object property can itself be an object
+	- objects are sometimes called associative arrays
+	- using bracket notation, we can use variables to create new members
+	- this keyword
+		- current object the code is being written inside of
+		- same method definition for every object you create
+	- constructor
+		- using object literal is fine when you need to create one object but when you need to create more than 1, they are inadequate
+			- write same code again
+			- and we want to update one property, then we need update it every object
+		- way to define the shape of an object - the set of properties and methods it can have, and then create as many objects as we like, just updating the properties that are different.
+			- using function (declare empty object, initialise it, return it)
+			- constructor is better - function called with a new keyword
+		- definition is like function with this keyword but for creating an instance of that object, we will use new
+- Fancy array functions
+	- map
+		- it expects callback as an argument, which is a fancy way to say pass another function as an argument to my function
+		- apply the passed function to each item of array and returns a new array. it doesn't modify the original array
+	- filter
+		- apply the callback function to each item of the array and returns the original item only the callback returns true
+		- callback must return true or false
+	- reduce
+		- array.reduce((accumulator, currentItem) => return, initialAccumulator (specific or first item of array))
+		- array.reduce(callback, initialValueOfAccumulator)
+		- apply the callback to each element of array and return accumulator
+	- Filter > Map > Reduce (Think of it like for making a sandwich, filtering ingredients, transforming ingredients, reducing them to one thing)
+	- sort
+		- this take two values a and b. run a function over these 2. if the function returns 1 then a is moved after b. if it returns 0, they are kept as it is. if -1 then a is moved before b
+	- slice: to cut and copy, to copy the original array
+	- splice: to add, remove, replace
+	- includes vs indexOf
+		- includes handles NaN correctly
+	- sort
+		- the items are sorted as strings by default
+
+
+### Questions
+
+- What is the difference between objects and arrays?
+	- arrays are a form of an object with some special features such as they have integers as properties and have special methods
+- How do you access object properties?
+	- object.property
+	- object [ property ]
+- What is Array.prototype.map() useful for?
+	- to create a new array by looping over an existing one and mapping the items of the array into something else
+- What is Array.prototype.filter() useful for?
+	- to filter the items of an array by looping over an array and checking for a condition. If the conditions turns out to be true then that item is included in the array
+- What is Array.prototype.reduce() useful for?
+	- it is used to loop over an array and reduce the items of the array to a single value
+
+
+
