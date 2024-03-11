@@ -92,4 +92,50 @@
 - table caption using caption element to give a brief about the table. For accessibility reasons. added just below the table opening tag
 - Structure the tables with thead, tbody, tfoot
 	- no usefulness in accessibility or visual enhancement
-	- 
+	- thead is usually first element in the table but it will come after colgroup if they are used
+	- tfoot - the browser always render it at the end of the table
+- in the absence of tbody, and tfoot, you would have to write much more complicated CSS
+- nested table: table inside a table. Sometimes it is better to just include more cells or rows
+- accessible tables
+	- screen readers identify all headers and make associations between headers and cell
+	- scope: col or row: header for a row or column
+		- rowgroup or colgroup: heading that sits on top of other subheadings but are also headers
+
+### Questions
+
+- What is a table?
+	- Table is a type 2 dimensional data structure to organize information related to a set of variables
+- Why is it a bad idea to use HTML Tables for page layout?
+	- semantically wrong
+	- wrong for accessibility reasons
+	- non-responsive
+	- hard to write and maintain
+- What are caption elements useful for?
+	- to give a context about what the data is about without reading the data
+	- accessible for screen readers
+- What is the scope attribute?
+	- defines the associative relationship between the row or column headings with the cells
+
+
+## CSS Concepts
+
+### Default Styles
+- Browsers have their own default styles. There is no guarantee that different browsers will apply the same style. Inconsistencies can be minor but they do exist
+- the whole idea of a CSS reset is to deal with styling inconsistencies across browsers
+
+### Questions
+- Why would you want to use a CSS reset?
+	- To remove or reset browser default styles. Since they are different across different browsers, it may introduce some unwanted effects, therefore it is best to reset or normalize them
+
+### CSS Units
+- Absolute units: units that are always the same in any context.
+	- eg: px. only unit that you should be using for web projects. The rest of the units make sense in print settings because they related to physical units (inches or cm)
+- Relative units change based on their context.
+	- rem and em: always use rem
+		- 1em = font size of the element (font size of the parent if setting the font of element itself)
+		- 1rem = font size of the root element (:root or html)
+	- using rem to set font size is recommended
+	- Viewport units
+		- size something relative to the viewport
+		- eg: full height heroes, full screen app like interfaces
+		- 

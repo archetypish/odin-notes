@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Foundations.md",
+                "file": "HTML CSS 1.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "bb30c7e466cf97ab",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Foundations.md",
+                "file": "HTML CSS 1.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Foundations.md",
+                "file": "HTML CSS 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Foundations.md"
+                "file": "HTML CSS 1.md"
               }
             }
           }
@@ -148,12 +149,12 @@
   },
   "active": "a7546c28916291f4",
   "lastOpenFiles": [
-    "YC Vault.md",
-    "Ideas.md",
+    "YC.md",
     "HTML CSS 1.md",
+    "Ideas.md",
     "AI.md",
-    "fastai.md",
     "Foundations.md",
-    "Goals.md"
+    "Goals.md",
+    "fastai.md"
   ]
 }

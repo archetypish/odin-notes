@@ -1,6 +1,7 @@
-## One
+## Vault
+### One
 
-### Sam Altman
+#### Sam Altman
 
 - Meant for someone whose goal is hyper growth and eventually become a very large company
 - 4 areas that you need to excel at in order to maximise the success of the startup
@@ -53,3 +54,24 @@
 	- Another thing that students usually don't understand or usually takes a while. You cannot create a market that doesn't wanna exist. You can basically change everything in a startup but the market. 
 	- Do some thinking that the market you are going after is going to grow and be there. 
 	- There are lot of different ways to talk about the right kind of market
+		- Surfing into someones else wave, stepping into an up elevator, being part of a movement - You want a market that is going to grow really quickly. It may seem small today, may be small today but you know and other people don't that it gonna grow really fast. So think about where this is happening in the world. You need sort of a tail wind to make the startup successful. 
+	- There are more tailwinds than ever before. Software is eating the world. It's just everywhere. So many great ideas out there. Pick one and find that you care about. 
+	- Another version of this: Why now?
+		- Why is this the perfect time for this particular idea and to start this particular company. 
+		- Why couldn't it be done 2 years ago and why 2 years in the future would be too late?
+		- If you don't have a great answer to this question, then you should be somewhat suspicious about it
+		- In general, if you build something that you yourself need. You will understand much better than you will understand by talking to a customer to build the very first version. 
+		- If you don't know it yourself, you are building something someone else needs, realize that you are at a big disadvantage and get very, very close to your customers. Try to work in their office and if not talk to them multiple times a day. 
+	- Another somewhat counter intuitive thing about good startup ideas is that they are almost very easy to explain and very easy to understand. If it takes more than a sentence to explain what you are doing, it's almost always a sign that it is too complicated. It should be clearly articulated vision with a small number of words. 
+	- And the best ideas are usually either very different from existing companies in one important way
+		- like google being a search engine that just worked really well 
+		- or totally new like SpaceX
+	- Any company that is a clone of something that already exists with some small or madeup differentiator. That usually fails. 
+	- One of the very good thing about being a student is that you have a very good perspective on new technology and learning to get good at having new ideas takes a while. Start working on it right now. 
+	- Other important thing to do is meet potential co-founders. More important than starting any particular startup is getting to know a lot of potential co-founders
+	- Quote from 50cent
+		- Importance of thinking about what customer want and thinking about demands of the market
+		- Most people don't do this, most students don't do this. 
+		- If you can just learn to think about the market first, you will have a big leg up on most people starting startups. 
+- Building a great product
+	- 
